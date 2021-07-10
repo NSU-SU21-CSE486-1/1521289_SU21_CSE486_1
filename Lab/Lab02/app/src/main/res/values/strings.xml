@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TwoActivities</string>
+    <string name="text_one">Text One</string>
+    <string name="text_two">Text Two</string>
+    <string name="text_three">Text Three</string>
+    <string name="text_1">
+        Duke Solinus, ruler of Ephesus, presides over the trial of Egeon of Syracuse. Syracusians are not allowed in Ephesus, so Egeon has been detained. When asked why he is now in Ephesus, Egeon explains how he is searching for his lost twin sons and their twin servants.
+    </string>
+    <string name="text_2">Meanwhile, in a nearby marketplace, a merchant has befriended two tourists: Antipholus of Syracuse and his servant companion, Dromio. Learning of the ban on Syracusians, they put on local dress before going to explore the town. Unknown to them, their twin brothers have been living there after being saved from the storm by fishermen. </string>
+    <string name="text_3">Antipholus of Syracuse is very surprised to be accosted by Dromio of Ephesus. Dromio is angry that his master has not returned home to his wife, Adriana, for dinner. The likeness of the Dromio twins, and also the sons of Egeon, leads to a series of confusions. This is especially true when Antipholus of Syracuse dines with his sister-in-law and falls in love with her sister, Luciana. His servant, Dromio of Syracuse, refuses to open the door to anyone. He bars the door even when Antipholus of Ephesus returns home with his merchant friends. This exclusion enrages Antipholus of Ephesus and leads him to dine with his friend, the courtesan.</string>
+</resources>
