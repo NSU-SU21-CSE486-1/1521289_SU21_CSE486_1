@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Project1</string>
+    <string name="next_step">Next Step</string>
+    <string name="hello_world">Hello World</string>
+    <string name="second_activity">Second Activity</string>
+    <string name="set_date">Set Date</string>
+    <string name="birth_date">Birth Date:</string>
+</resources>
