@@ -14,13 +14,13 @@
 <p align="center"><strong>Course No</strong>: CSE 486 <strong>Sec</strong><strong>:</strong> 01</p>
 <p align="center"><strong>Faculty</strong>: Shaikh Shawon Arefin Shimon (SAS3)</p>
 <p align="center"><strong><u>Member 1</u></strong><u>:</u></p>
-<p align="center"><strong>Name</strong><strong>:</strong>Shaikh Shawon Arefin Shimon</p>
-<p align="center"><strong>ID</strong><strong>:&nbsp; </strong>182005840</p>
-<p align="center"><strong>Email</strong><strong>:</strong> <a href="mailto:shaikh.shimon@northsouth.edu">shaikh.shimon@northsouth.edu</a></p>
+<p align="center"><strong>Name</strong><strong>:</strong>Shanto Kumar Datta</p>
+<p align="center"><strong>ID</strong><strong>:&nbsp; </strong>1521289042</p>
+<p align="center"><strong>Email</strong><strong>:</strong> <a href="mailto:shanto.datta@northsouth.edu">shanto.datta@northsouth.edu</a></p>
 
-<p align="center"><strong>Git Repository</strong><strong>: </strong><a href="https://github.com/NSU-SU21-CSE486-1/SAS3-SU21-CSE486-S01">https://github.com/NSU-SU21-CSE486-1/SAS3-SU21-CSE486-S01</a></p>
+<p align="center"><strong>Git Repository</strong><strong>: </strong><a href="https://github.com/NSU-SU21-CSE486-1/1521289_SU21_CSE486_1">https://github.com/NSU-SU21-CSE486-1/1521289_SU21_CSE486_1</a></p>
 
-<p align="center"><strong>Date Prepared</strong><strong>: </strong>June 17, 2021</p>
+<p align="center"><strong>Date Prepared</strong><strong>: </strong>1 August, 2021</p>
 <p><strong>&nbsp;</strong></p>
 <p><strong>&nbsp;</strong></p>
 
