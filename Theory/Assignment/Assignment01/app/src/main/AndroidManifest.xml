@@ -9,13 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Project1">
-        <activity android:name=".SecondActivity"
-            android:label = "@string/second_activity"
+        <activity
+            android:name=".ThirdActivity"
+            android:label="Third Activity"
+            android:parentActivityName=".SecondActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.shanto.project1.SecondActivity" />
+        </activity>
+        <activity
+            android:name=".SecondActivity"
+            android:label="@string/second_activity"
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=
-                    "com.shanto.project1.MainActivity" />
+                android:value="com.shanto.project1.MainActivity" />
         </activity>
         <activity android:name=".MainActivity">
             <intent-filter>

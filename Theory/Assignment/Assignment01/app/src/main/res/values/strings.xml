@@ -5,4 +5,8 @@
     <string name="second_activity">Second Activity</string>
     <string name="set_date">Set Date</string>
     <string name="birth_date">Birth Date:</string>
+
+    <string-array name="university">
+        <item>North South University</item>
+    </string-array>
 </resources>
