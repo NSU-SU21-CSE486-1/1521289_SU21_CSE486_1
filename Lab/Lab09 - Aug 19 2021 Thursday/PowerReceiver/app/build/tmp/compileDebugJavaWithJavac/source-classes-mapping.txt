@@ -1,0 +1,6 @@
+com/shanto/powerreceiver/BuildConfig.java
+ com.shanto.powerreceiver.BuildConfig
+com/shanto/powerreceiver/CustomReceiver.java
+ com.shanto.powerreceiver.CustomReceiver
+com/shanto/powerreceiver/MainActivity.java
+ com.shanto.powerreceiver.MainActivity
