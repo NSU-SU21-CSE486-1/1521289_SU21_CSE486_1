@@ -29,13 +29,13 @@ public class MainActivity extends AppCompatActivity {
         String day_string = Integer.toString(day);
         String year_string = Integer.toString(year);
         String dateMessage = (month_string + "/" + day_string + "/" + year_string);
-        Toast.makeText(this, getString(R.string.dateword) + dateMessage, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.dateword) + dateMessage, Toast.LENGTH_LONG).show();
     }
     public void processTimePickerResult(int hourOfDay, int minutes) {
         String hour_string = Integer.toString(hourOfDay);
         String minute_string = Integer.toString(minutes);
-        String timeMessage = (hour_string + "/" + minute_string);
-        Toast.makeText(this, getString(R.string.timeword) + timeMessage, Toast.LENGTH_SHORT).show();
+        String timeMessage = (hour_string + ":" + minute_string);
+        Toast.makeText(this, getString(R.string.timeword) + timeMessage, Toast.LENGTH_LONG).show();
     }
 
 }
