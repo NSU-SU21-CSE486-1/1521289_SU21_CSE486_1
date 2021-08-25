@@ -15,6 +15,8 @@ public class SecondActivity extends AppCompatActivity implements AdapterView.OnI
     public static final String EXTRA_MESSAGE =
             "com.shanto.project1.extra.NAME";
     Object university;
+    Object department;
+    Object level;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,15 +38,33 @@ public class SecondActivity extends AppCompatActivity implements AdapterView.OnI
         textView4.setText(blood);
 
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
+        Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);
+        Spinner spinner3 = (Spinner) findViewById(R.id.spinner3);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.university, android.R.layout.simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
+
+        ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this, R.array.department, android.R.layout.simple_spinner_dropdown_item);
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner2.setAdapter(adapter2);
+        spinner2.setOnItemSelectedListener(this);
+
+        ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this, R.array.level, android.R.layout.simple_spinner_dropdown_item);
+        adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner3.setAdapter(adapter3);
+        spinner3.setOnItemSelectedListener(this);
     }
 
     public void onItemSelected(AdapterView<?> parent, View view, int pos, long id){
         university = parent.getItemAtPosition(pos);
+    }
+    public void onItemSelected2(AdapterView<?> parent, View view, int pos, long id){
+        department = parent.getItemAtPosition(pos);
+    }
+    public void onItemSelected3(AdapterView<?> parent, View view, int pos, long id){
+        level = parent.getItemAtPosition(pos);
     }
 
     public void onNothingSelected(AdapterView<?> parent){
@@ -53,7 +73,7 @@ public class SecondActivity extends AppCompatActivity implements AdapterView.OnI
 
     public void launchThirdActivity(View view){
         Intent intent = new Intent(this, ThirdActivity.class);
-        String uni = university.toString();
+        String uni = department.toString();
         intent.putExtra(EXTRA_MESSAGE, uni);
         startActivity(intent);
     }

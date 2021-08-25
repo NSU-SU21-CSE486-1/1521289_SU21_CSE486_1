@@ -9,4 +9,11 @@
     <string-array name="university">
         <item>North South University</item>
     </string-array>
+    <string-array name="department">
+        <item>CSE</item>
+    </string-array>
+    <string-array name="level">
+        <item>BSc.</item>
+    </string-array>
+
 </resources>
