@@ -27,7 +27,7 @@ public class PagerAdapter extends FragmentStateAdapter {
             case 1:
                 return new UniversityAssociation();
         }
-        return null;
+        return new BasicInformation();
     }
 
     @Override

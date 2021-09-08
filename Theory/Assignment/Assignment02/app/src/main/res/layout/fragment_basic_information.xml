@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     tools:context=".BasicInformation"
     android:orientation="horizontal"
     >
@@ -13,8 +13,8 @@
         android:id="@+id/editText_name"
         android:layout_width="341dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:ems="10"
         android:hint="Enter Your Name"
@@ -36,7 +36,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/editText_blood"
-        android:layout_marginLeft="50dp"
+        android:layout_toEndOf="@+id/textView_birthDate"
+        android:layout_marginLeft="30dp"
         android:layout_marginBottom="15dp"
         android:onClick="showDatePicker"
         android:text="@string/set_date" />
@@ -47,8 +48,8 @@
         android:layout_height="46dp"
 
         android:layout_below="@+id/editText_blood"
-        android:layout_marginLeft="80dp"
-        android:layout_toEndOf="@+id/button1"
+        android:layout_marginLeft="50dp"
+
         android:text="@string/birth_date"
         android:textSize="25sp" />
 

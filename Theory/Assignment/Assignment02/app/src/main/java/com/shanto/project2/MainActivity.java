@@ -20,6 +20,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -45,6 +46,8 @@ public class MainActivity extends AppCompatActivity {
     private EditText mNID;
     private EditText mBloodGroup;
 
+    String[] tabNames = {"Basic", "University"};
+
     ViewPager2 myViewPager2;
     PagerAdapter myAdapter;
     private ArrayList<Fragment> arrayList = new ArrayList<>();
@@ -64,8 +67,8 @@ public class MainActivity extends AppCompatActivity {
         myViewPager2.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
 
         myViewPager2.setAdapter(myAdapter);
-
-        myViewPager2.setPageTransformer(new MarginPageTransformer(1500));
+//
+//        myViewPager2.setPageTransformer(new MarginPageTransformer(150));
 
 
 
@@ -73,9 +76,10 @@ public class MainActivity extends AppCompatActivity {
 //        Toolbar toolbar = findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
 //
-//        TabLayout tabLayout = findViewById(R.id.tab_layout);
-//        tabLayout.addTab(tabLayout.newTab().setText(R.string.tab_personal));
-//        tabLayout.addTab(tabLayout.newTab().setText(R.string.tab_university));
+        TabLayout tabLayout = findViewById(R.id.tab_layout);
+        new TabLayoutMediator(tabLayout, myViewPager2,
+                (tab, position) -> tab.setText(tabNames[position])
+        ).attach();
 //
 //        tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
 //
