@@ -102,7 +102,7 @@ public class BasicInformation extends Fragment implements Parcelable{
 
     public void showDatePicker(View view) {
         DialogFragment datePicker = new DatePickerFragment();
-        datePicker.show(getFragmentManager(), "datePicker");
+        datePicker.show(getActivity().getSupportFragmentManager(), "datePicker");
     }
 
     public void processDatePickerResult(int year, int month, int day) {
