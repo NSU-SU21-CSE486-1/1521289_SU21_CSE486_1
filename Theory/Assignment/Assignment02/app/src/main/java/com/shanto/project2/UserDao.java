@@ -12,7 +12,7 @@ public interface UserDao {
     @Insert
     void insert(User user);
 
-    @Query("SELECT * from user_table ORDER BY word ASC")
+    @Query("SELECT * from user_table ORDER BY name ASC")
     LiveData<List<User>> getAllUsers();
 
 }

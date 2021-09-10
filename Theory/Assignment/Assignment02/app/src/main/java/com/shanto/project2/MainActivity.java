@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText mNID;
     private EditText mBloodGroup;
 
-    String[] tabNames = {"Basic", "University"};
+    String[] tabNames = {"Basic", "University", "Users"};
 
     ViewPager2 myViewPager2;
     PagerAdapter myAdapter;
@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
         myViewPager2.setOrientation(ViewPager2.ORIENTATION_HORIZONTAL);
 
         myViewPager2.setAdapter(myAdapter);
-//
+
 //        myViewPager2.setPageTransformer(new MarginPageTransformer(150));
 
 

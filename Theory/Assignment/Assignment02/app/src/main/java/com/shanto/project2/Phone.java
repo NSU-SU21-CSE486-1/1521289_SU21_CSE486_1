@@ -14,14 +14,19 @@ public class Phone {
     @ColumnInfo(name = "phone")
     private String mPhone;
 
-    public Phone(int id, String tag, String phone) {
-        this.mId = id;
-        this.mTag = tag;
-        this.mPhone = phone;
+    public Phone(int mId, String mTag, String mPhone) {
+        this.mId = mId;
+        this.mTag = mTag;
+        this.mPhone = mPhone;
     }
-    public Phone getPhone() {
-        Phone phone = new Phone(this.mId, this.mTag, this.mPhone);
-        return phone;
+    public int getId() {
+        return mId;
+    }
+    public String getTag() {
+        return mTag;
+    }
+    public String getPhone() {
+        return mPhone;
     }
 
 }

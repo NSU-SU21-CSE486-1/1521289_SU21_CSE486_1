@@ -20,18 +20,31 @@ public class University {
     @ColumnInfo(name="email")
     private String mEmail;
 
-    public University(int id, String uni, String dept, String studentId, String level, String email) {
-        this.mId = id;
-        this.mUniversity = uni;
-        this.mDepartment = dept;
-        this.mStudentId = studentId;
-        this.mStudyLevel = level;
-        this.mEmail = email;
+    public University(int mId, String mUniversity, String mDepartment, String mStudentId, String mStudyLevel, String mEmail) {
+        this.mId = mId;
+        this.mUniversity = mUniversity;
+        this.mDepartment = mDepartment;
+        this.mStudentId = mStudentId;
+        this.mStudyLevel = mStudyLevel;
+        this.mEmail = mEmail;
     }
 
-    public University getUniversity() {
-        University uni = new University(this.mId, this.mUniversity, this.mDepartment,this.mStudentId, this.mStudyLevel, this.mEmail);
-        return uni;
+    public int getId() {
+        return mId;
     }
-
+    public String getUniversity() {
+        return mUniversity;
+    }
+    public String getDepartment() {
+        return mDepartment;
+    }
+    public String getStudentId() {
+        return mStudentId;
+    }
+    public String getStudyLevel() {
+        return mStudyLevel;
+    }
+    public String getEmail() {
+        return mEmail;
+    }
 }

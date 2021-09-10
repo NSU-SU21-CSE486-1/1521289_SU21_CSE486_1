@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "user_table")
 public class User {
-    @PrimaryKey(autoGenerate = true)
+    @PrimaryKey
     private int mId;
 
     @ColumnInfo(name="name")
@@ -19,15 +19,30 @@ public class User {
     private String mBirthDate;
 
 
-    public User(int id, String name, String nid, String blood, String birth) {
-        this.mId = id;
-        this.mName = name;
-        this.mNid = nid;
-        this.mBloodGroup = blood;
-        this.mBirthDate = birth;
+    public User(int mId, String mName, String mNid, String mBloodGroup, String mBirthDate) {
+        this.mId = mId;
+        this.mName = mName;
+        this.mNid = mNid;
+        this.mBloodGroup = mBloodGroup;
+        this.mBirthDate = mBirthDate;
     }
-    public User getWord(){
+    public User getUser(){
         User user = new User(this.mId, this.mName, this.mNid, this.mBloodGroup, this.mBirthDate);
         return user;
+    }
+    public int getId() {
+        return this.mId;
+    }
+    public String getName() {
+        return this.mName;
+    }
+    public String getNid() {
+        return this.mNid;
+    }
+    public String getBirthDate() {
+        return this.mBirthDate;
+    }
+    public String getBloodGroup() {
+        return this.mBloodGroup;
     }
 }
